@@ -1,10 +1,16 @@
 package OOPS_Lec1;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
+
+
+         Person person = new Person("Tushar",23,180,"Btech");
+
+         Person sagar = new Person("Tushar",23);
 
 //        Person p = new Person("Vikash",23,180,"Btech");
 //        //p is the reference variable of the object in the memory
@@ -22,74 +28,97 @@ public class Main {
 //        Person p4 = new Person("Vibhuti",23);
 //
 //        System.out.println("The address of memory where Vibhut info is stored/reference "+p4);
+//
+//        System.out.println("Welcome to Lotak Bank. To open an account please enter your details");
+//
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter accountNo");
+//        String accountNo = sc.nextLine();
+//        System.out.println("Enter Your Name");
+//        String name = sc.nextLine();
+//        System.out.println("Enter Initial Balance");
+//        int balance = sc.nextInt();
+//        System.out.println("Enter account type");
+//        String accountType = sc.nextLine();
+//
+//        BankAccount bankAccount = new BankAccount(accountNo,name,balance,accountType);
+//
+//        System.out.println("Enter type of operation " + "\n"+
+//                "1. Check balance " +
+//                "2. Add money " +
+//                "3. Withdraw money" +
+//                "4. Exit");
+//
+//        int choice = sc.nextInt();
+//
+//        while(choice!=4){
+//
+//            switch (choice){
+//                case 1:
+//                    int balanceGot  = bankAccount.checkBalance();
+//                    System.out.println("The balance is"+balanceGot);
+//                    break;
+//                case 2:
+//                    System.out.println("Enter the money to add");
+//                    int money = sc.nextInt();
+//                    bankAccount.addMoney(money);
+//                    break;
+//                case 3:
+//                    System.out.println("Enter the money to withdraw");
+//                    int moneyToWithdraw = sc.nextInt();
+//                    bankAccount.withdrawMoney(moneyToWithdraw);
+//            }
+//
+//            System.out.println("Thank you for operating !!");
+//
+//            System.out.println("Enter type of operation " + "\n"+
+//                    "1. Check balance " +
+//                    "2. Add money " +
+//                    "3. Withdraw money" +
+//                    "4. Exit");
+//
+//            choice = sc.nextInt();
+//        }
 
-        System.out.println("Welcome to Lotak Bank. To open an account please enter your details");
+        Student student = new Student();
 
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter accountNo");
-        String accountNo = sc.nextLine();
-        System.out.println("Enter Your Name");
-        String name = sc.nextLine();
-        System.out.println("Enter Initial Balance");
-        int balance = sc.nextInt();
-        System.out.println("Enter account type");
-        String accountType = sc.nextLine();
-
-        BankAccount bankAccount = new BankAccount(accountNo,name,balance,accountType);
-
-        System.out.println("Enter type of operation " + "\n"+
-                "1. Check balance " +
-                "2. Add money " +
-                "3. Withdraw money" +
-                "4. Exit");
-
-        int choice = sc.nextInt();
-
-        while(choice!=4){
-
-            switch (choice){
-                case 1:
-                    int balanceGot  = bankAccount.checkBalance();
-                    System.out.println("The balance is"+balanceGot);
-                    break;
-                case 2:
-                    System.out.println("Enter the money to add");
-                    int money = sc.nextInt();
-                    bankAccount.addMoney(money);
-                    break;
-                case 3:
-                    System.out.println("Enter the money to withdraw");
-                    int moneyToWithdraw = sc.nextInt();
-                    bankAccount.withdrawMoney(moneyToWithdraw);
-            }
-
-            System.out.println("Thank you for operating !!");
-
-            System.out.println("Enter type of operation " + "\n"+
-                    "1. Check balance " +
-                    "2. Add money " +
-                    "3. Withdraw money" +
-                    "4. Exit");
-
-            choice = sc.nextInt();
-        }
-
+        System.out.println(student.name+" -- "+student.rollNo);
     }
+}
+
+class Student{
+    int rollNo;
+    String name;
+
 }
 
 //This is a class : Blueprint of the object
 class Person{
 
-    public Person(String name,int age){
+    public Person(String name, int age){
         this.name = name;
         this.age = age;
     }
+
     public Person(String name, int age, int height, String qualification){
-       this.name = name;
-        this.age = age;
+        this(name,age);
         this.height = height;
         this.qualification = qualification;
     }
+
+    public Person(String name, int age, int height, String qualification, String gender, String favouritePlaceToVisit) {
+        this(name,age,height,qualification);
+        this.gender = gender;
+        this.favouritePlaceToVisit = favouritePlaceToVisit;
+    }
+
+    public Person(String name, int age, int height, String qualification, String gender, String favouritePlaceToVisit, String personalHobby, String motherTounge) {
+        //this(name,age,height,qualification,gender,favouritePlaceToVisit);
+        this.personalHobby = personalHobby;
+        this.motherTounge = motherTounge;
+    }
+
+
     //Local variables have been initialized with the help of constructor
 
 
@@ -99,10 +128,22 @@ class Person{
     int height;
     String qualification;
 
+    String gender;
+
+    String favouritePlaceToVisit;
+
+    String personalHobby;
+
+    String motherTounge;
+
     //Methods : functions that objects of this class can call
 
     public void sing(String name){
         System.out.println("This "+name+" is singing a song");
+    }
+
+    public void vikasFunc(Person p){
+
     }
 
 
