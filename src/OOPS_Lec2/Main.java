@@ -66,7 +66,7 @@ class Doctor extends Person{
     }
 
     public void updateName(String newName){
-        name = newName;
+        super.name = newName;
     }
 
 

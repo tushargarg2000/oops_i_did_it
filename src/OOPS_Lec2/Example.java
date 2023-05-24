@@ -1,8 +1,8 @@
 package OOPS_Lec2;
 
-class Example {
+public class Example {
 }
 
-public class Example1{
+class Example1{
 
 }
