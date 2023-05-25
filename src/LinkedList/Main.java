@@ -29,21 +29,32 @@ class LinkedList{
 
         Node newNode = new Node(data); //The random memory address we get
         //in the newNode variable
-        System.out.println("Printing the address of the new Node"+newNode);
+
 
         //First Node
         if(head==null && tail==null){
             head = newNode;
             tail = newNode;
-            System.out.println("This is the first Node");
-            System.out.println("Add of newNode"+newNode+" headNode : "+head+"tailNode : "+tail);
             return;
         }
 
         //Other nodes
-        tail.nextNodeAddress = newNode;
-        tail = newNode;
-        System.out.println("Add of newNode"+newNode+" headNode : "+head+"tailNode : "+tail);
+        tail.nextNodeAddress = newNode; //Modifying the address of the last node of the Linked List
+
+
+        tail = newNode; //Tail should be moved to the last node of the linked List
+
+    }
+
+    public void printList(){
+
+        Node currentAdd = head;
+
+        while(currentAdd!=null){
+            System.out.printf(currentAdd.data+" ");
+
+            currentAdd = currentAdd.nextNodeAddress;
+        }
     }
 
 
@@ -64,6 +75,8 @@ public class Main {
             int no = scanner.nextInt();
             ll.addNode(no);
         }
+
+        ll.printList();
 
     }
 }
