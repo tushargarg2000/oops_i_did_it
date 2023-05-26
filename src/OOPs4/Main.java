@@ -93,6 +93,12 @@ class BankAccount{
         return "Please retry the update password";
     }
 
+    public String getSecurityAns(){
+
+        //Incase I want to some validation
+        return securityAns;
+
+    }
 
     public void setSecurityAns(String securityAns) {
         this.securityAns = securityAns;

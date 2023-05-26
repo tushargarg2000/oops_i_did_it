@@ -29,15 +29,12 @@ class LinkedList{
 
         Node newNode = new Node(data); //The random memory address we get
         //in the newNode variable
-
-
         //First Node
         if(head==null && tail==null){
             head = newNode;
             tail = newNode;
             return;
         }
-
         //Other nodes
         tail.nextNodeAddress = newNode; //Modifying the address of the last node of the Linked List
 
