@@ -1,0 +1,16 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ˆþ„§þÿÿÿÿ
+U
+java:S1854":Remove this useless assignment to local variable "person".(ã»ÿŸúÿÿÿÿ
+N	java:S106	"9Replace this use of System.out or System.err by a logger.(–¦‘Ž
+F
+java:S1481"+Remove this unused "person" local variable.(ã»ÿŸúÿÿÿÿ
+S	java:S106&"9Replace this use of System.out or System.err by a logger.(—¹ž¢ýÿÿÿÿ
+@
+java:S2387+"*"name" is the name of a field in "Person".(Ê§…ñ
+U
+java:S11618":Add the "@Override" annotation above this method signature(‹Ð®Œþÿÿÿÿ
+S	java:S1069"9Replace this use of System.out or System.err by a logger.(³üúÍýÿÿÿÿ
+Z	java:S106A"9Replace this use of System.out or System.err by a logger.(æÎ—³ÿÿÿÿÿ8÷êÏ¤„1
+N
+java:S1128",Remove this unused import 'javax.print.Doc'.(ö«‘™ýÿÿÿÿ8€âì¤„1

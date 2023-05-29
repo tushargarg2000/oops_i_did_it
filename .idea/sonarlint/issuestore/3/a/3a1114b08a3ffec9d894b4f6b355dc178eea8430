@@ -1,0 +1,18 @@
+
+r
+java:S14882"\Immediately return this expression instead of assigning it to the temporary variable "path".(½è·ç
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(©É¶¶ÿÿÿÿÿ
+_
+java:S1854"=Remove this useless assignment to local variable "delhivery".(ç¹û‰ıÿÿÿÿ8š“Íö„1
+P
+java:S1481".Remove this unused "delhivery" local variable.(ç¹û‰ıÿÿÿÿ8œ“Íö„1
+N
+java:S1610"8Convert the abstract class "Delivery" into an interface.(ñ½Ç
+D
+java:S1172".Remove this unused method parameter "address".(Ğ×„Õ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Ò’à‡
+S	java:S106$"9Replace this use of System.out or System.err by a logger.(ö×Şµúÿÿÿÿ
+\
+java:S1161(":Add the "@Override" annotation above this method signature(ë’²úÿÿÿÿ8œàáö„1
+U	java:S106)"9Replace this use of System.out or System.err by a logger.(ì•™ƒ8ÜÜâö„1
+X	java:S125,"<This block of commented-out lines of code should be removed.(Û’Ã¼8§­Åö„1
