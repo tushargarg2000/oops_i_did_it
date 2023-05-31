@@ -1,0 +1,20 @@
+
+g
+java:S1104;"QMake accNo a static final constant or non-public and provide accessors if needed.(»¼†­
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ä”·4
+R
+java:S1854	"7Remove this useless assignment to local variable "obj".(ñ•×€ùÿÿÿÿ
+C
+java:S1481	"(Remove this unused "obj" local variable.(ñ•×€ùÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(¯î»­úÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(ÎùÐžüÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Ð¤àÖ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(é§Ð‡üÿÿÿÿ
+N	java:S106&"9Replace this use of System.out or System.err by a logger.(û • 
+S	java:S106-"9Replace this use of System.out or System.err by a logger.(‚é€Þûÿÿÿÿ
+S	java:S106P"9Replace this use of System.out or System.err by a logger.(öú†Šþÿÿÿÿ
+Z	java:S106T"9Replace this use of System.out or System.err by a logger.(é§Ð‡üÿÿÿÿ8ÈÅõ„1
+B
+java:S10685",Remove this unused "variable" private field.(èŒ­í
+F
+java:S1068?"+Remove this unused "balance" private field.(©Åûøÿÿÿÿ
